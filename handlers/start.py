@@ -50,10 +50,10 @@ Telegram UserBot to Play Audio in Telegram Voice Chats 🔊
                     [
                         InlineKeyboardButton(
                              text=" 👺 Yakka Adaviya Group ",
-                             url="https://t.me/sltechzoneofficial"),
+                             url="https://t.me/yakkaadaviyaofficial"),
                          InlineKeyboardButton(
                              text=" 👹 Yakka Adaviya Channel ",
-                             url="https://t.me/sltechzone")
+                             url="https://t.me/yakkaadaviya")
                     ],
                     [
                         InlineKeyboardButton(
