@@ -10,35 +10,9 @@ from config import BOT_NAME as bn
 async def start(_, message: Message):
     await message.reply_text(
         f"""
-        👹💫 යක්ක🇱🇰අඩවිය™ (Group Music Bot) 💫👹\n\nTelegram UserBot to Play Audio in Telegram Voice Chats 🔊\n\n©2021 @YakkaAdaviyaMusicBot Bot All Rights Reserved
-        """,
-        reply_markup=InlineKeyboardMarkup(
-            [
-                    [
-                        InlineKeyboardButton(
-                             text=" 👪 Support Group ",
-                             url="https://t.me/sltechzoneofficial"),
-                         InlineKeyboardButton(
-                             text=" 🔔 Update Channel ",
-                             url="https://t.me/sltechzone")
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text=" 🙋 Help ",
-                            callback_data="help"),
-                         InlineKeyboardButton(
-                            text=" ⚡️ Developer ",
-                             url="https://t.me/hirunaofficial")        
-                       
-                    ],
-            ]
-        ),
-     disable_web_page_preview=True
-    )
-    
-@Client.on_message(filters.command("help") & filters.private & ~filters.channel)
-async def start(_, message: Message):
-    await message.reply_text("""
+👹💫 යක්ක🇱🇰අඩවිය™ (Group Music Bot) 💫👹
+Telegram UserBot to Play Audio in Telegram Voice Chats 🔊
+
 **All Users**
 /play <song name> - play song you requested
 /dplay <song name> - play song you requested via deezer
@@ -60,8 +34,37 @@ async def start(_, message: Message):
 /userbotjoin - invite assistant to your chat
 /userbotleave - remove assistant from your chat
 /admincache - Refresh admin list
-"""
-   )
+
+©2021 @YakkaAdaviyaMusicBot Bot All Rights Reserved
+""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                    [
+                        InlineKeyboardButton(
+                             text=" 👪 Bot Support Group ",
+                             url="https://t.me/sltechzoneofficial"),
+                         InlineKeyboardButton(
+                             text=" 🔔 Bot Update Channel ",
+                             url="https://t.me/sltechzone")
+                    ],
+                    [
+                        InlineKeyboardButton(
+                             text=" 👺 Yakka Adaviya Group ",
+                             url="https://t.me/sltechzoneofficial"),
+                         InlineKeyboardButton(
+                             text=" 👹 Yakka Adaviya Channel ",
+                             url="https://t.me/sltechzone")
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text=" ⚡️ Developer ",
+                             url="https://t.me/hirunaofficial") 
+                    
+                    ]
+            ]
+        ),
+     disable_web_page_preview=True
+    )
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
@@ -72,7 +75,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "️Start", url="https://t.me/YakkaAdaviyaMusicBot")
+                        "️Start Bot", url="https://t.me/YakkaAdaviyaMusicBot")
                 ]
             ]
         )
